@@ -6,7 +6,7 @@ public class CaixaEletronico {
         //condicional simples
         if (valorSolicitado < saldo) {
             saldo = saldo - valorSolicitado;
-            System.out.printf("Novo saldo R$%,.2f", saldo);
+            System.out.println(String.format("Novo saldo R$%,.2f", saldo));
         }
     }
 }

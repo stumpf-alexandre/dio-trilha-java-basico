@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class ContaTerminal {
     public static void main(String[] args) throws Exception {
-        // TODO:
         // Conhecer e importar a classe Scaner
         // Exibir as mensagens para o nosso usuário
         // Obter pela Scanner os valores digitados no terminal1
@@ -43,8 +42,8 @@ public class ContaTerminal {
         } while (Float.parseFloat(saldo) <= (float) 99.99);
         // Exibir a menssagem conta criada
         System.out.println("Conta criada");
-        System.out.printf(
-                "Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$%.2f já está disponível para saque",
+        System.out.printf("Olá %s, obrigado por criar uma conta em nosso banco, sua agência é %s, conta %d e seu saldo R$%.2f já está disponível para saque",
                 nomeCliente, numAgencia, numConta, Float.parseFloat(saldo));
+                sc.close();
     }
 }
